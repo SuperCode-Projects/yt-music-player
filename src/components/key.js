@@ -1,1 +1,1 @@
-export const key = "ziuCIO9Cd7bxT2GhJKGFaGuPtW8F2kna"
+export const TicketmasterKey = "ziuCIO9Cd7bxT2GhJKGFaGuPtW8F2kna"
