@@ -15,7 +15,7 @@ import CurrentSong from './components/CurrentSong';
 function App() {
   return (
     <div className="App">
-		<div>
+		<div className="ControlBox">
 			<CurrentSong />
 	  		<NextUp />
 	  	</div>
