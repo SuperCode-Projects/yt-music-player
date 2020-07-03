@@ -1,0 +1,10 @@
+.events {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+}
+
+.events > img {
+    width: 10%;
+    height: 10%;
+}
