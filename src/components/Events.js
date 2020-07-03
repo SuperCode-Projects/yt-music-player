@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import '/Events.css';
 
-import { key } from "../key";
+{ /*import { key } from "../key";*/}
 
 
 const Events = () => (
