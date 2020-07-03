@@ -5,6 +5,8 @@ import Search from "./components/Search";
 import Lyrics from "./components/Lyrics";
 import Events from "./components/Events";
 import Navbar from './components/Navbar';
+import NextUp from './components/NextUp';
+import CurrentSong from './components/CurrentSong';
 
 
 
@@ -13,6 +15,10 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App">
+		<div>
+			<CurrentSong />
+	  		<NextUp />
+	  	</div>
       		<BrowserRouter>
 			<div>
         <Navbar />
@@ -20,10 +26,9 @@ function App() {
 					<h1>YT Music Player</h1>
 				</nav>
 				<Switch>
-       { /*
 					<Route exact path="/search">
 						<Search />
-       </Route> */}
+       				</Route>
 					<Route path="/lyrics" exact>
 						<Lyrics />
 					</Route>
