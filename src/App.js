@@ -3,6 +3,8 @@ import './App.css';
 import Search from "./components/Search";
 import Lyrics from "./components/Lyrics";
 import Events from "./components/Events";
+import Navbar from './components/Navbar';
+
 
 
 
@@ -12,6 +14,7 @@ function App() {
     <div className="App">
       		<BrowserRouter>
 			<div>
+        <Navbar />
 				<nav>
 					<h1>YT Music Player</h1>
 				</nav>

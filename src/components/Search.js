@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 import '/Search.css';
 
@@ -9,6 +9,7 @@ const Search = () => (
   <input type="text" id="name" name="name" placeholder="Type in the artists name"></input>
   <img src="images/zoom-in.png"></img>
       </form>
+
       <div className="songs">
           <article>
               <img src = "images/band1.jpg"></img>
