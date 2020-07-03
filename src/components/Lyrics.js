@@ -3,6 +3,8 @@ import React, { Component } from "react";
 
 import '/Lyrics.css';
 
+import { key } from "../key";
+
 const Lyrics = () => (
     <div className="lyrics">
         <p>

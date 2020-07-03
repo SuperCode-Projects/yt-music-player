@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import '/Search.css';
 
+import { key } from "../key";
+
 const Search = () => (
     <section>
         <form>
