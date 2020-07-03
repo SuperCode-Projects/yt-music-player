@@ -12,9 +12,8 @@ const CurrentSong = () => {
             <img src="public/icons8-fast-forward-50.png"></img>
         </div>
         <div className="NowPlaying">
-            <p>The Backstreet Boys - Everyboday</p>
+            <p>The Backstreet Boys - Everybody</p>
         </div>
-
      </div>
 
 
