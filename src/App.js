@@ -19,25 +19,10 @@ function App() {
 			<CurrentSong />
 	  		<NextUp />
 	  	</div>
-      		<BrowserRouter>
-			<div>
-        <Navbar />
-				<nav>
-					<h1>YT Music Player</h1>
-				</nav>
-				<Switch>
-					<Route exact path="/search">
-						<Search />
-       				</Route>
-					<Route path="/lyrics" exact>
-						<Lyrics />
-					</Route>
-          <Route path="/events" exact>
-						<Events />
-					</Route>
-      </Switch>
-			</div>
-		</BrowserRouter>
+    <div className="navigation">
+      <Navbar />
+      <Search />
+    </div>
     </div>
   );
 }
