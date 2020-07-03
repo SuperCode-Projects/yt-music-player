@@ -4,7 +4,15 @@ video {
     box-sizing: border-box;
 }
 
-.Backwards{
+.Button{
+    border-radius: 50%;
+    background-color: white;
+    padding: .3em;
+    margin: .3em;
+
+}
+
+#Backwards{
     transform: rotateY(180deg);
 }
 
@@ -12,6 +20,7 @@ video {
     display: flex;
     justify-content: center;
     padding: 1em 0;
+    
 }
 
 .NowPlaying{
