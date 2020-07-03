@@ -20,12 +20,10 @@ function App() {
 					<h1>YT Music Player</h1>
 				</nav>
 				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
+       { /*
 					<Route exact path="/search">
 						<Search />
-					</Route>
+       </Route> */}
 					<Route path="/lyrics" exact>
 						<Lyrics />
 					</Route>
