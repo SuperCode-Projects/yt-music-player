@@ -4,6 +4,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: "ControlBox navigation";
     gap: 2em;
+    background-color: darkblue;
 }
 
 .ControlBox{
