@@ -1,13 +1,20 @@
 #name {
     width: 80%;
-    height: 20%;
+    height: 60px;
     background-color: white;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .songs {
     width: 80%;
     height: 80%;
     background-color: white;
+    border: solid black 1px;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
 }
 
 .songs > article {
@@ -16,5 +23,10 @@
 
 .songs > article > img {
     height: 10%;
-    width: 10%
+    width: 10%;
+}
+
+form > img {
+    height: 45px;
+    width: 45px;
 }

@@ -25,7 +25,7 @@ const Search = () => (
              </article>
              <article>
               <img src = "images/band3.jpg"></img>
-              <h2>The Weeknd - I feel it comming</h2>
+              <h2>The Weeknd - I feel it coming</h2>
               <p>The Weeknd</p>
              </article>
          </div>
