@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 const Navbar = () => (
     <div>
-         <Link to = "/Search">
+        { /* <Link to = "/search">
         <button>Search</button>
         </Link>
         <Link to = "/lyrics">
@@ -11,7 +11,7 @@ const Navbar = () => (
         </Link>
         <Link to = "/events">
         <button>Events</button>
-        </Link>
+        </Link> */}
     </div>
 )
 
