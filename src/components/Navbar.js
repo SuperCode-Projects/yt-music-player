@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 const Navbar = () => (
     <div>
-          <Link to = "/Search">
+         <Link to = "/Search">
         <button>Search</button>
         </Link>
         <Link to = "/lyrics">
