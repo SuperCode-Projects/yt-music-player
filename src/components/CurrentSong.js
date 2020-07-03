@@ -14,9 +14,12 @@ const CurrentSong = () => {
             <img className="Button" id="Forewards" src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
         </div>
         <div className="NowPlaying">
-            <p>The Backstreet Boys - Everybody</p>
+            <p id="artist">The Backstreet Boys</p>
+            <p id="Song">- Everybody</p>
         </div>
+        <hr class="solid"></hr>
      </div>
+
 
 
      );

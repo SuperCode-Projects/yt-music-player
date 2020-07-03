@@ -26,6 +26,14 @@ video {
 .NowPlaying{
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
-    font-weight: 900;
 }
+
+#artist{
+    text-transform: uppercase;
+   font-weight: 900;
+}
+
+hr.solid {
+    border: 1px solid black;
+    width: 90%;
+  }
