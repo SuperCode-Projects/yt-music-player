@@ -9,7 +9,7 @@ const Search = () => (
         <form>
   <label for="name"></label>
   <input type="text" id="name" name="name" placeholder="Type in the artists name"></input>
-  <img src="images/zoom-in.png"></img>
+  <img className="searchIcon" src="images/zoom-in.png"></img>
       </form>
 
       <div className="songs">
