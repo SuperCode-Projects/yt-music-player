@@ -1,7 +1,7 @@
   
 import React, { Component } from "react";
 
-import '/Lyrics.css';
+import './Lyrics.css';
 
 
 

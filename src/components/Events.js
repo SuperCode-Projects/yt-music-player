@@ -1,7 +1,7 @@
   
 import React, { Component } from "react";
 
-import '/Events.css';
+import './Events.css';
 
 
 
