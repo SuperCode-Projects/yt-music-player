@@ -6,11 +6,10 @@ import './Search.css';
 
 const Search = () => (
     <section>
-        <form>
-  <label for="name"></label>
-  <input type="text" id="name" name="name" placeholder="Type in the artists name"></input>
-  <img className="searchIcon" src="images/zoom-in.png"></img>
-      </form>
+    <div id="input_container">
+    <input type="text" id="input" value></input>
+    <img src="images/zoom-in.png" id="input_img"></img>
+    </div>
 
       <div className="songs">
           <article>
