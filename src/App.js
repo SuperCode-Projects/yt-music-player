@@ -14,28 +14,17 @@ import CurrentSong from './components/CurrentSong';
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
 		<div className="ControlBox">
 			<CurrentSong />
 	  		<NextUp />
 	  	</div>
     <div className="navigation">
+      <h1>Navbar</h1>
       <Navbar />
-      <Switch>
-            <Route exact path="/">
-                <Search />
-            </Route>
-            <Route exact path="/Lyrics">
-                <Lyrics />
-            </Route>
-            <Route exact path="/Events">
-                <Events />
-            </Route>
-        </Switch> 
+      <Search />
     </div>
     </div>
-    </BrowserRouter>
   );
 }
 
