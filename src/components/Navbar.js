@@ -7,7 +7,7 @@ import Events from "./Events";
 
 const Navbar = () => (
     <BrowserRouter>
-    <nav>
+    <nav className="navbar">
        <Link to="Search">
         <h2>Search</h2>  
         </Link>

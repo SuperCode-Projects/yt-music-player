@@ -1,0 +1,12 @@
+.navbar {
+    display: inline;
+    list-style-type: none;
+    background-color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar:hover {
+    color: white;
+}
