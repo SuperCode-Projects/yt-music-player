@@ -9,6 +9,7 @@
 
 .ControlBox{
     grid-area: ControlBox;
+    background-color: blueviolet;
 }
 
 .navigation{

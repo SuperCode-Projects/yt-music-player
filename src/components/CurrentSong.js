@@ -6,7 +6,7 @@ const CurrentSong = () => {
     return ( 
      <div className="CurrentSong">
         <div>
-            <video className="video" src="https://www.youtube.com/watch?v=6M6samPEMpM" alt="video">Video</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6M6samPEMpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div className="controls">
             <img src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
