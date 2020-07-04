@@ -8,15 +8,18 @@ const CurrentSong = () => {
         <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6M6samPEMpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div className="controls">
-            <img src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
-            <img src="icons8-play-button-circled-50.png" alt="playButton"></img>
-            <img src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
+        <div className="Controls">
+            <img className="Button" id="Backwards" src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
+            <img className="Button" id="Play" src="icons8-play-button-circled-50.png" alt="playButton"></img>
+            <img className="Button" id="Forewards" src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
         </div>
         <div className="NowPlaying">
-            <p>The Backstreet Boys - Everybody</p>
+            <p id="artist">The Backstreet Boys</p>
+            <p id="Song">- Everybody</p>
         </div>
+        <hr class="solid"></hr>
      </div>
+
 
 
      );

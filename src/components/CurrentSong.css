@@ -3,3 +3,37 @@ video {
     width: 100%;
     box-sizing: border-box;
 }
+
+.Button{
+    border-radius: 50%;
+    background-color: white;
+    padding: .3em;
+    margin: .3em;
+
+}
+
+#Backwards{
+    transform: rotateY(180deg);
+}
+
+.Controls{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    
+}
+
+.NowPlaying{
+    display: flex;
+    justify-content: center;
+}
+
+#artist{
+    text-transform: uppercase;
+   font-weight: 900;
+}
+
+hr.solid {
+    border: 1px solid black;
+    width: 90%;
+  }

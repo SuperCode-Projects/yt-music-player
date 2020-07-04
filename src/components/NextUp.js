@@ -4,7 +4,7 @@ import './NextUp.css';
 const NextUp = () => {
     return ( 
         <div className="NextUp">
-            <h5>Next Up</h5>
+            <h3>Next Up</h3>
             <div className="NextUpTitle">
             <img className="AlbumCoverNextUp" src="logo192.png" alt="albumcoverimage"></img>
             <p>Spice Girls - Wannabe</p>
