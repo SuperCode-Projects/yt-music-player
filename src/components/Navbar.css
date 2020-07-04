@@ -1,0 +1,18 @@
+.navbar > h2 {
+    display: inline;
+    list-style-type: none;
+    padding: 10px 0;
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar > h2:hover {
+    color: white;
+}
+
+nav {
+    border-radius: 20px;
+    background-color: black;
+    width: 80%;
+    height: 30%;
+}
