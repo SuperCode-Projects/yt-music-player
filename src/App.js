@@ -14,6 +14,7 @@ import CurrentSong from './components/CurrentSong';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
 		<div className="ControlBox">
 			<CurrentSong />
@@ -22,9 +23,21 @@ function App() {
     <div className="navigation">
       <h1>Navbar</h1>
       <Navbar />
+      <Switch>
+					<Route exact path="/search">
+						<Search />
+					</Route>
+					<Route path="/lyrics" exact>
+						<Lyrics />
+					</Route>
+          <Route path="/events" exact>
+            <Events />
+          </Route>
+				</Switch>
       <Search />
     </div>
     </div>
+    </BrowserRouter>
   );
 }
 
