@@ -18,6 +18,8 @@ function App() {
     <div className="App">
 		<div className="ControlBox">
 			<CurrentSong />
+      </div>
+      <div class="NextUp">
 	  		<NextUp />
 	  	</div>
     <div className="navigation">
