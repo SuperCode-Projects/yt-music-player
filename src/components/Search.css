@@ -6,7 +6,6 @@
     background:#ddd;
     direction: rtl;
     width: 80%;
-    text-align: center;
 }
 #input {
     height:20px;
@@ -14,6 +13,7 @@
     padding-right: 30px;
     width: 100%;
     border-radius: 20px;
+    text-align: center;
 }
 #input_img {
     position:absolute;
@@ -21,6 +21,7 @@
     right:5px;
     width:24px;
     height:24px;
+    padding-right: 20px;
 }
 
 .songs {
