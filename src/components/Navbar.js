@@ -6,9 +6,7 @@ import Lyrics from "./Lyrics";
 import Events from "./Events";
 
 const Navbar = () => (
-    <BrowserRouter>
     <nav>
-        <div className="navbar">
        <Link to="Search">
         <h2>Search</h2>  
         </Link>
@@ -18,21 +16,7 @@ const Navbar = () => (
         <Link to="Events">
         <h2>Events</h2>
         </Link>
-        </div>
-        <Switch>
-            <Route exact path="/">
-                <Search />
-            </Route>
-            <Route exact path="/Lyrics">
-                <Lyrics />
-            </Route>
-            <Route exact path="/Events">
-                <Events />
-            </Route>
-        </Switch> 
-
     </nav>
-    </BrowserRouter>
 )
 
 
