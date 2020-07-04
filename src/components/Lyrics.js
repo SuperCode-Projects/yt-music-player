@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 import './Lyrics.css';
 
-import { musixmatchkey } from "./keys.js";
 
 
 
