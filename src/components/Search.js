@@ -7,7 +7,7 @@ import './Search.css';
 const Search = () => (
     <section>
     <div id="input_container">
-    <input type="text" id="input" value></input>
+    <input type="text" id="input" placeholder="Type in the artists name"></input>
     <img src="images/zoom-in.png" id="input_img"></img>
     </div>
 
