@@ -1,35 +1,31 @@
 import React, { Component } from "react";
+import { ytkey } from "./key";
 
 import './Search.css';
 
 
-
-const Search = () => (
-    <section>
-    <div id="input_container">
-    <input type="text" id="input" placeholder="Type in the artists name"></input>
-    <img src="images/zoom-in.png" id="input_img"></img>
-    </div>
-
-      <div className="songs">
-          <article>
-              <img src = "images/band1.jpg"></img>
-              <h2>The Weeknd - Blinding Lights</h2>
-              <p>The Weeknd</p>
-             </article>
-             <article>
-              <img src = "images/band2.jpg"></img>
-              <h2>The Weeknd - If your eyes</h2>
-              <p>The Weeknd</p>
-             </article>
-             <article>
-              <img src = "images/band3.jpg"></img>
-              <h2>The Weeknd - I feel it coming</h2>
-              <p>The Weeknd</p>
-             </article>
-         </div>
-    </section>
-)
+    class Search {
+        constructor(props) {
+          this.state = {
+            q: "",
+            results: []
+          }
+        }
+        HandleInputChanged(e) {
+          this.setState({q: e.target.value})
+        }
+        async HandleSearchClicked(e) {
+          let result = await searchYoutube(ytkey, { q: this.state.q });
+          this.setState({results: result.items})
+        }
+        render() {
+          return (<div>
+              console.log(result)
+            <input onChange={this.HandleInputChanged} />
+            <button onClick={this.HandleSearchClicked}>Search</button>
+          </div>)
+        }
+      }
 
 
 export default Search;
