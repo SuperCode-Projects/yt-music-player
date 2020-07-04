@@ -20,7 +20,6 @@ function App() {
 	  		<NextUp />
 	  	</div>
     <div className="navigation">
-      <h1>Navbar</h1>
       <Navbar />
       <Search />
     </div>
