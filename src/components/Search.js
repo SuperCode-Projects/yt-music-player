@@ -25,13 +25,17 @@ import './Search.css';
         async HandleSearchClicked(e){
           let result = await searchYoutube(ytkey, { q: this.state.q });
           this.setState({results: result.items})
+          console.log(result)
         }
         render() {
           return (<div>
             <input onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
             {
-        this.state.results.map(item => <p>{item.snippet.title}</p>)
+        this.state.results.map(item => <>
+          <img src={item.snippet.thumbnails.default.url} alt="image"/> +
+        `{item.snippet.title}`</>
+        )
       }
           </div>)
         }
