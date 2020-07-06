@@ -18,13 +18,17 @@ class Search extends Component{
           this.setState({q: e.target.value})
         }
         async HandleSearchClicked(e){
-          let result = await searchYoutube(ytkey, { q: this.state.q });
+          const result = await searchYoutube({ytkey}, { q: this.state.q });
           this.setState({results: result.items})
+          console.log(result)
         }
         render() {
           return (<div>
             <input onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
+            {/* {
+          this.state.results.map(item => <SearchListItem name={item.name} />)
+            } */}
             
           </div>)
         }
