@@ -27,6 +27,7 @@ import './Search.css';
         async HandleSearchClicked(e){
           let result = await searchYoutube(ytkey, { q: this.state.q });
           this.setState({results: result.items})
+          console.log(result)
         }
         render() {
           return (<div>
