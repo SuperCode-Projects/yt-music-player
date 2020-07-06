@@ -7,16 +7,10 @@ import './Search.css';
 
 // 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key=$[ytkey]'
 
-<<<<<<< HEAD
 
     class Search extends Component {
         constructor(props) {
           super(props);
-=======
-class Search extends Component{
-        constructor(props) {
-        super(props)
->>>>>>> c69ca685ba410f35a687ea16d783af09e22b9916
           this.state = {
             q: "",
             results: []
@@ -31,19 +25,14 @@ class Search extends Component{
         async HandleSearchClicked(e){
           let result = await searchYoutube(ytkey, { q: this.state.q });
           this.setState({results: result.items})
-          console.log(result);
         }
         render() {
           return (<div>
             <input onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
-<<<<<<< HEAD
             {
         this.state.results.map(item => <p>{item.snippet.title}</p>)
       }
-=======
-            
->>>>>>> c69ca685ba410f35a687ea16d783af09e22b9916
           </div>)
         }
       }
