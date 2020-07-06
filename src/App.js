@@ -18,10 +18,11 @@ function App() {
     <div className="App">
 		<div className="ControlBox">
 			<CurrentSong />
+      <div class="NextUp">
 	  		<NextUp />
 	  	</div>
+      </div>
     <div className="navigation">
-      <h1>Navbar</h1>
       <Navbar />
       <Switch>
 					<Route exact path="/search">

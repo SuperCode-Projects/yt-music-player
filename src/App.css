@@ -1,18 +1,16 @@
-.App{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "ControlBox navigation";
-    gap: 2em;
-    background-color: darkblue;
+nav{
+    display: inline-flex;
 }
 
-.ControlBox{
-    grid-area: ControlBox;
-    background-color: blueviolet;
+h2{
+    padding: 0 1em;
+}
 
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .navigation{
-    grid-area: navigation;
+    text-align: center;
 }
