@@ -3,6 +3,8 @@ import { ytkey } from "./key";
 
 import searchYoutube from 'youtube-api-v3-search';
 
+import SearchListItem from "./SearchListItem";
+
 import './Search.css';
 
 // 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key=$[ytkey]'
@@ -31,7 +33,7 @@ import './Search.css';
             <input onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
             {
-        this.state.results.map(item => <p>{item.snippet.title}</p>)
+        this.state.results.map(item => <SearchListItem />)
       }
           </div>)
         }
