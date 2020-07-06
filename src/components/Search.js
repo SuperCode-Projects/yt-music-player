@@ -33,8 +33,11 @@ import './Search.css';
             <button onClick={this.HandleSearchClicked}>Search</button>
             {
         this.state.results.map(item => <>
-          <img src={item.snippet.thumbnails.default.url} alt="image"/> 
-        `{item.snippet.title}`</>
+        <div>
+        <img src={item.snippet.thumbnails.default.url} alt="image"/> 
+        `{item.snippet.title}`
+        </div>
+        </>
         )
       }
           </div>)
