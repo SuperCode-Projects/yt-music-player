@@ -22,12 +22,11 @@ class Events extends Component {
         const url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=${Ticketmasterkey}";
         const response = await fetch(url);
         const data = await response.json();
-        const output = q;
-        this.setState({result: data.results.output[0]});
+        this.setState({result: data.results[0]});
         console.log(data);
     }
     render() {
-        if (!this.result.output) {
+        if (!this.result) {
             return (
                 <div>Sorry, no events found</div>
             )}
