@@ -5,7 +5,6 @@ import './Lyrics.css';
 
 
 
-
 const Lyrics = () => (
     <div className="lyrics">
         <p>

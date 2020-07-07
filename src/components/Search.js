@@ -31,7 +31,7 @@ import './Search.css';
         }
         render() {
           return (<div>
-            <input onChange={this.HandleInputChanged} />
+            <input  onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
             {
         this.state.results.map(item => <>
