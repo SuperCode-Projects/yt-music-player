@@ -14,6 +14,9 @@ class Events extends Component {
         q: "",
         results: []
     } }
+    HandleInputChanged = (e) => {
+        this.setState({q: e.target.value})
+    }
 
     async componentDidMount() {
         const url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=${Ticketmasterkey}";
