@@ -34,7 +34,10 @@ import './Search.css';
             <input onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
             {
-        this.state.results.map(item => <SearchListItem />)
+        this.state.results.map(item => <>
+          <img src={item.snippet.thumbnails.default.url} alt="image"/> 
+        `{item.snippet.title}`</>
+        )
       }
           </div>)
         }
