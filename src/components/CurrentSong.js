@@ -1,13 +1,14 @@
 import React from "react";
-
+import YouTube from 'react-youtube';
 import './CurrentSong.css';
 
-const CurrentSong = () => {
+const CurrentSong = (props) => {
     return ( 
      <div className="CurrentSong">
-        <div>
+            <div>
+                <p>videoId: {props.videoId}</p>
             
-        <iframe src="https://www.youtube.com/embed/6M6samPEMpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+                <iframe src={"https://www.youtube.com/embed/" + props.videoId} autoplay frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
         </div>
         <div className="Controls">
             <img className="Button" id="Backwards" src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>

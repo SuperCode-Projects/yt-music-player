@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import Search from "./components/Search";
@@ -8,16 +8,27 @@ import Navbar from './components/Navbar';
 import NextUp from './components/NextUp';
 import CurrentSong from './components/CurrentSong';
 
+class App extends Component {
+  constructor() { 
+    super()
+    this.state = {
+      currentVideo: "6M6samPEMpM"
+    }
+    this.handleVideoClicked = this.handleVideoClicked.bind(this);
+  }
 
+  handleVideoClicked(videoId) {
+    this.setState({ currentVideo: videoId });
+    console.log("current video state", videoId);
+  }
 
+  render() {
 
-
-function App() {
-  return (
-    <BrowserRouter>
+    return (
+      <BrowserRouter>
     <div className="App">
-		<div className="ControlBox">
-			<CurrentSong />
+      <div className="ControlBox">
+			<CurrentSong videoId={this.state.currentVideo} />
       <div class="NextUp">
 	  		<NextUp />
 	  	</div>
@@ -25,8 +36,8 @@ function App() {
     <div className="navigation">
       <Navbar />
       <Switch>
-					<Route exact path="/search">
-						<Search />
+					<Route exact path="/">
+              <Search activeVideo={this.handleVideoClicked} foo={"bar"}/>
 					</Route>
 					<Route path="/lyrics" exact>
 						<Lyrics />
@@ -35,11 +46,11 @@ function App() {
             <Events />
           </Route>
 				</Switch>
-      <Search />
     </div>
     </div>
     </BrowserRouter>
   );
+}
 }
 
 export default App;
