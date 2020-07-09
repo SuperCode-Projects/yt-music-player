@@ -14,3 +14,11 @@ h3{
     text-transform: uppercase;
     font-weight: 900;
 }
+
+.NextUp{
+    margin: 2em 0;
+    border: 2px solid tomato;
+    border-radius: 35px;
+    height: 32.5%;
+
+}

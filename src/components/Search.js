@@ -5,6 +5,7 @@ import Video from "./VideoListItem";
 import SearchListItem from "./SearchListItem";
 
 import './Search.css';
+import './VideoListItem.css';
 
 // 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key=$[ytkey]'
 

@@ -37,7 +37,7 @@ class App extends Component {
     <div className="navigation">
       <Navbar />
       <Switch>
-					<Route exact path="/Search">
+					<Route exact path="/">
               <Search activeVideo={this.handleVideoClicked} foo={"bar"}/>
 					</Route>
 					<Route path="/lyrics" exact>

@@ -19,7 +19,6 @@ const CurrentSong = (props) => {
         <p>{props.items}</p>
             <p id="Song">- Everybody</p>
         </div>
-        <hr className="solid"></hr>
      </div>
      );
 }

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body{
-    background-image: linear-gradient(10deg,rgba(55, 70, 76,1) 6.140625%,rgba(33, 41, 44,1) 95.51562499999999%);
+    background-color: rgba(55, 70, 76,1);
     height: 100vh;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
     }
 
 nav{
@@ -15,7 +19,7 @@ h2{
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a img{
@@ -54,4 +58,25 @@ a img{
 
 } 
 
+/* ________________TABLET ANSICHT */
 
+@media (max-device-width: 768px) { 
+    .App{
+        display: grid;
+        padding: 2em;
+        width: 90%;
+        
+        }
+
+    .ControlBox{
+        width: 100%;
+        height: auto;
+    }
+    .navigation{
+        display: grid;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+}

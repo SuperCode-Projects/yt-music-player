@@ -1,3 +1,4 @@
+
 #searchBox{
     display: grid;
     align-content: start;
@@ -8,11 +9,22 @@
 input{
     height: 50px;
     border-radius: 15px;
-    margin: 1em 0;
+    margin: .5em 0;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    
 }
 
 
 button{
     height: 50px;
+    color: #afff14;
+    background-color: tomato;
     border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: none;
+    outline: #afff14;
 }
