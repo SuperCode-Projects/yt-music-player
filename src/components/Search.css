@@ -1,0 +1,18 @@
+#searchBox{
+    display: grid;
+    align-content: start;
+    margin: 20px;
+    
+}
+
+input{
+    height: 50px;
+    border-radius: 15px;
+    margin: 1em 0;
+}
+
+
+button{
+    height: 50px;
+    border-radius: 15px;
+}

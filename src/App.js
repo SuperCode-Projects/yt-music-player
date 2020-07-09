@@ -12,7 +12,8 @@ class App extends Component {
   constructor() { 
     super()
     this.state = {
-      currentVideo: "6M6samPEMpM"
+      /* currentVideo: "6M6samPEMpM" */
+      currentVideo: ""
     }
     this.handleVideoClicked = this.handleVideoClicked.bind(this);
   }
