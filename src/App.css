@@ -1,9 +1,16 @@
+body{
+    background-image: linear-gradient(10deg,rgba(55, 70, 76,1) 6.140625%,rgba(33, 41, 44,1) 95.51562499999999%);
+    height: 100vh;
+    box-sizing: border-box;
+    }
+
 nav{
     display: inline-flex;
 }
 
 h2{
     padding: 0 1em;
+    
 }
 
 a {
@@ -11,6 +18,41 @@ a {
     color: black;
 }
 
-.navigation{
-    text-align: center;
+a img{
+    padding: 0 1em;
+    margin-top: 2em;
 }
+
+.navigation{
+    text-align: left;
+}
+
+
+
+/* ________________DESKTOP ANSICHT */
+
+@media (min-device-width: 768px) { 
+.App{
+    display: flex;
+    padding: 2em;
+    height: 100vh;
+    box-sizing: border-box;
+    }
+
+.ControlBox{
+    width: 40%;
+}
+.navigation{
+    display: grid;
+    width: 60%;
+    margin-left: 2em;
+    border: 2px solid whitesmoke;
+    border-radius: 35px;
+
+}
+
+
+
+} 
+
+

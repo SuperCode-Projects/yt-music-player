@@ -28,6 +28,7 @@ import './Search.css';
         async HandleSearchClicked(e){
           let result = await searchYoutube(ytkey, { q: this.state.q });
           this.setState({results: result.items})
+          console.log(result)
         }
 
         onClickVideoTile(videoId) {
@@ -35,7 +36,7 @@ import './Search.css';
           this.props.activeVideo(videoId);
       }
         render() {
-          return (<div>
+          return (<div id="searchBox"> 
             <input  onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
             {

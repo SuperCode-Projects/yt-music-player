@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Search from "./Search";
 import Lyrics from "./Lyrics";
 import Events from "./Events";
+import './Navbar.css';
 
 const Navbar = () => (
     <nav>

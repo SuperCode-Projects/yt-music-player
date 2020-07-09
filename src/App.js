@@ -29,14 +29,14 @@ class App extends Component {
     <div className="App">
       <div className="ControlBox">
 			<CurrentSong videoId={this.state.currentVideo} />
-      <div class="NextUp">
+      <div className="NextUp">
 	  		<NextUp />
 	  	</div>
       </div>
     <div className="navigation">
       <Navbar />
       <Switch>
-					<Route exact path="/">
+					<Route exact path="/Search">
               <Search activeVideo={this.handleVideoClicked} foo={"bar"}/>
 					</Route>
 					<Route path="/lyrics" exact>
