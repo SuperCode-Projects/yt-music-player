@@ -16,7 +16,7 @@ const CurrentSong = (props) => {
             <img className="Button" id="Forward" src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
         </div>
         <div className="NowPlaying">
-            <p id="artist">The Backstreet Boys</p>
+            <p id="artist">{props.title}</p>
             <p id="Song">- Everybody</p>
         </div>
         <hr className="solid"></hr>
