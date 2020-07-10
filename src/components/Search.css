@@ -1,11 +1,7 @@
 
 #searchBox{
-    position: absolute;
-    top: 15%;
-    left: 43%;
     align-content: start;
     margin: 20px;
-    width: 50%;
     display: grid;
     grid-template-columns: .9fr .1fr;
     grid-template-rows: 1fr;
@@ -19,7 +15,7 @@ input{
     height: 50px;
     border-radius: 15px;
     font-size: 25px;
-    border: none;
+    border: 1px solid black;
     outline: none;
     
 }

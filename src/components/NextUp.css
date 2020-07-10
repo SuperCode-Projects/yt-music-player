@@ -17,8 +17,7 @@ h3{
 
 .NextUp{
     margin: 2em 0;
-    border: 2px solid tomato;
+    border-top: 5px solid tomato;
     border-radius: 35px;
-    height: 32.5%;
 
 }

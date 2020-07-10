@@ -4,12 +4,37 @@
 /*__________________________mobile Version*/
 
     body{
-        background-color: rgb(122, 11, 207);
-        height: 100vh;
+        background-color: #5602FF;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
-        padding: 10px;
+        padding: 0;
         }
+
+    .App{
+        display: grid;
+        box-sizing: border-box;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "CurrentSong"
+                            "NextUp"
+                            "Search";
+
+    }
+    .navigation{
+        grid-area: Search;
+        text-align: left;
+        background-color: white;
+        height: 50vh;
+
+    } 
+
+    .ControlBox{
+        grid-area: CurrentSong;
+    }
+    .NextUp{
+        grid-area: NextUp;
+        height: 20%;
+    }
     
     nav{
         display: inline-flex;
@@ -17,7 +42,6 @@
     
     h2{
         padding: 0 1em;
-        
     }
     
     a {
@@ -28,34 +52,9 @@
     a img{
         padding: 0 1em;
         margin-top: 2em;
-    }
-    
-    .navigation{
-        text-align: left;
-    }  
+    } 
 
 
 /* ________________DESKTOP ANSICHT */
 
-@media (min-width: 768px) { 
-.App{
-    display: flex;
-    padding: 1em;
-    height: 100vh;
-    box-sizing: border-box;
-    }
 
-.ControlBox{
-    width: 40%;
-}
-.navigation{
-    display: grid;
-    width: 60%;
-    margin-left: 1em;
-    border: 2px solid whitesmoke;
-    border-radius: 35px;
-}
-
-
-
-} 

@@ -1,5 +1,5 @@
 .CurrentSong{
-    border: 2px solid tomato;
+    border-bottom: 5px solid tomato;
     border-radius: 35px;
     padding: 5px;
 }
@@ -36,6 +36,8 @@ iframe {
 .NowPlaying{
     display: flex;
     justify-content: center;
+    background-color: #0000CA;
+    border-radius: 30px;
 }
 
 #artist{

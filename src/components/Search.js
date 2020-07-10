@@ -39,10 +39,11 @@ import './VideoListItem.css';
           return (<div id="searchBox"> 
             <input  onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
+            <div>
             {
               this.state.results.map(item => <Video item={item} activeVideo={this.onClickVideoTile}/>
         )
-      }
+      }</div>
           </div>)
         }
       }
