@@ -5,7 +5,6 @@
 
     body{
         background-color: #5602FF;
-        box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
         padding: 0;
         }
@@ -13,10 +12,10 @@
     .App{
         display: grid;
         box-sizing: border-box;
-        grid-template-rows: repeat(3,1fr);
-        grid-template-rows: 1fr;
+        gap: 1em;
+        grid-template-rows: .5fr .5fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "CurrentSong"
-                            "NextUp"
                             "Search";
 
     }
@@ -24,18 +23,13 @@
         grid-area: Search;
         text-align: left;
         background-color: white;
-        height: 50vh;
-
+        padding: 20px 0;
     } 
 
     .ControlBox{
         grid-area: CurrentSong;
     }
-    .NextUp{
-        grid-area: NextUp;
-        height: 20%;
-    }
-    
+
     nav{
         display: inline-flex;
     }
@@ -58,3 +52,21 @@
 /* ________________DESKTOP ANSICHT */
 
 
+@media (min-device-width: 800px) { 
+
+    .App{
+        display: grid;
+        box-sizing: border-box;
+        grid-template-rows: 1fr .5fr;
+        grid-template-columns: .4fr .6fr;
+        grid-template-areas: "CurrentSong Search"
+                            "CurrentSong Search";
+
+    }
+
+    .navigation{
+        height:100vh;
+        border-left: 5px solid white;
+        border-radius: 35px 0 0 35px;
+    } 
+}
