@@ -16,11 +16,7 @@ const CurrentSong = (props) => {
             <img className="Button" id="Forward" src="icons8-fast-forward-50.png" alt="backwardsIcon"></img>
         </div>
         <div className="NowPlaying">
-<<<<<<< HEAD
-            <p id="artist">{props.title}</p>
-=======
         <p>{props.items}</p>
->>>>>>> b8b2081447d971cd78e933c192e71756f81b3449
             <p id="Song">- Everybody</p>
         </div>
      </div>

@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
-
+import { musixmatchkey } from "./key";
 import './Lyrics.css';
 
 
@@ -11,14 +11,15 @@ class Lyrics extends Component {
     constructor(props){
     super(props)
     this.state = {
+        q:"",
         lyrics: []
     }};
 
     componentDidMount() {
-        fetch(`https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${musixmatchkey}`)
+        fetch(`https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.items.id}&apikey=${musixmatchkey}`)
         .then(res => {
             let lyrics = res.data.message.body.lyrics;
-            setLyrics({ lyrics })
+            this.setState({lyrics: lyrics.item})
         } 
         )
     };
@@ -29,7 +30,7 @@ render() {
 <>
 <Link to = "/">Go Back</Link>
 <div className="lyricsBody">
-    <p>{lyrics.lyrics.lyrics_body}</p>
+    <p>{this.state.lyrics.lyrics_body}</p>
 </div>
 </>
     );
