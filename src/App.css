@@ -1,16 +1,61 @@
-nav{
-    display: inline-flex;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-h2{
-    padding: 0 1em;
-}
 
-a {
-    text-decoration: none;
-    color: black;
-}
+/*__________________________mobile Version*/
 
+    body{
+        background-color: rgba(55, 70, 76,1);
+        height: 100vh;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+        }
+    
+    nav{
+        display: inline-flex;
+    }
+    
+    h2{
+        padding: 0 1em;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a img{
+        padding: 0 1em;
+        margin-top: 2em;
+    }
+    
+    .navigation{
+        text-align: left;
+    }  
+
+
+/* ________________DESKTOP ANSICHT */
+
+@media (min-width: 768px) { 
+.App{
+    display: flex;
+    padding: 2em;
+    height: 100vh;
+    box-sizing: border-box;
+    }
+
+.ControlBox{
+    width: 40%;
+}
 .navigation{
-    text-align: center;
+    display: grid;
+    width: 60%;
+    margin-left: 2em;
+    border: 2px solid whitesmoke;
+    border-radius: 35px;
 }
+
+
+
+} 

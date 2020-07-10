@@ -1,50 +1,30 @@
 
-#input_container {
-    position:relative;
-    padding:0 0 0 20px;
-    margin:0 20px;
-    background:#ddd;
-    direction: rtl;
-    width: 80%;
-}
-#input {
-    height:20px;
-    margin:0;
-    padding-right: 30px;
-    width: 100%;
-    border-radius: 20px;
-    text-align: center;
-}
-#input_img {
-    position:absolute;
-    bottom:2px;
-    right:5px;
-    width:24px;
-    height:24px;
-    padding-right: 20px;
+#searchBox{
+    display: grid;
+    align-content: start;
+    margin: 20px;
+    
 }
 
-.songs {
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    border: solid black 1px;
-    border-radius: 20px;
-    margin-top: 5%;
-    padding-left: 5%;
-    padding-top: 3%;
+input{
+    height: 50px;
+    border-radius: 15px;
+    margin: .5em 0;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    
 }
 
-.songs > article {
-    display: inline-block;
-}
 
-.songs > article > img {
-    height: 10%;
-    width: 10%;
-}
-
-form > img {
-    height: 45px;
-    width: 45px;
+button{
+    height: 50px;
+    color: #afff14;
+    background-color: tomato;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: none;
+    outline: #afff14;
 }

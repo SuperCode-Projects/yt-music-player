@@ -12,7 +12,8 @@ class App extends Component {
   constructor() { 
     super()
     this.state = {
-      currentVideo: "6M6samPEMpM"
+      /* currentVideo: "6M6samPEMpM" */
+      currentVideo: ""
     }
     this.handleVideoClicked = this.handleVideoClicked.bind(this);
   }
@@ -29,7 +30,7 @@ class App extends Component {
     <div className="App">
       <div className="ControlBox">
 			<CurrentSong videoId={this.state.currentVideo} />
-      <div class="NextUp">
+      <div className="NextUp">
 	  		<NextUp />
 	  	</div>
       </div>
