@@ -20,10 +20,14 @@ class Video extends Component {
     render() {
         return (
             <div className="SearchlistItems">
+                <ul>
+                <li>
                 <a href="#" onClick={this.handleVideoClicked}>
                 <img src={this.props.item.snippet.thumbnails.default.url} alt="image"/> 
                 <>{this.props.item.snippet.title}</>
                 </a>
+                </li>
+                </ul>
             </div>
         );
     }

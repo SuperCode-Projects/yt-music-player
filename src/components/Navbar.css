@@ -1,8 +1,13 @@
 nav{
     display: flex;
     justify-content: space-around;
+    background-color: black;
+    border-radius: 35px;
+    height: 75px;
+    margin: .3em;
 }
 
 nav a{
-    color: white;;
+    color: white;
+
 }

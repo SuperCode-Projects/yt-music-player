@@ -1,3 +1,16 @@
+
+.SearchlistItems{
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+.SearchlistItems a{
+    float: left;
+    color: black;
+    background-color: white;
+}
+
 img{
     width: 50px;
 }
