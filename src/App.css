@@ -4,7 +4,6 @@
 /*__________________________mobile Version*/
 
     body{
-        background-color: #5602FF;
         font-family: 'Poppins', sans-serif;
         padding: 0;
         }
@@ -22,12 +21,14 @@
     .navigation{
         grid-area: Search;
         text-align: left;
-        background-color: white;
+
         padding: 20px 0;
     } 
 
     .ControlBox{
         grid-area: CurrentSong;
+        border-radius: 0 0 35px 35px;
+        background-color: #5602FF;
     }
 
     nav{
@@ -55,8 +56,10 @@
 @media (min-device-width: 800px) { 
 
     .App{
+        background-color: #5602FF;
+        height:100vh;
         display: grid;
-        box-sizing: border-box;
+        box-sizing: content-box;
         grid-template-rows: 1fr .5fr;
         grid-template-columns: .4fr .6fr;
         grid-template-areas: "CurrentSong Search"
@@ -65,8 +68,11 @@
     }
 
     .navigation{
-        height:100vh;
         border-left: 5px solid white;
         border-radius: 35px 0 0 35px;
     } 
+
+    .ControlBox{
+        grid-area: CurrentSong;
+    }
 }

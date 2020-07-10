@@ -4,10 +4,12 @@
     margin: 20px;
     display: grid;
     grid-template-columns: .9fr .1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: .5fr;
     grid-template-areas: "input btn";
-
-    
+    gap: .5em;
+    background-color: white;
+    height:80%;
+    border-radius: 35px;
 }
 
 input{
@@ -17,7 +19,6 @@ input{
     font-size: 25px;
     border: 1px solid black;
     outline: none;
-    
 }
 
 

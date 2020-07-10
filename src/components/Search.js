@@ -32,7 +32,7 @@ import './VideoListItem.css';
         }
 
         onClickVideoTile(videoId) {
-          console.log("test", videoId, this.props);
+          console.log("test", videoId,this.props);
           this.props.activeVideo(videoId);
       }
         render() {

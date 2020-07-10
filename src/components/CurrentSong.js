@@ -9,16 +9,11 @@ const CurrentSong = (props) => {
      <div className="CurrentSong">
             <div>
                 <YouTube  autoplay videoId={props.videoId}/>
-                {/* <iframe src={"https://www.youtube.com/embed/" + props.videoId} autoplay frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe> */}
         </div>
-        <div id="Controls">
-            <img className="Button" id="Backwards" src="icons8-fast-forward-runde-50.png" alt="backwardsIcon"></img>
-            <img className="Button" id="Play" src="icons8-wiedergabe-eingekreist-50.png" alt="playButton"></img>
-            <img className="Button" id="Forward" src="icons8-fast-forward-runde-50.png" alt="backwardsIcon" ></img>
-        </div>
+        <PlayerControls />
         <div className="NowPlaying">
-        <p>BSB</p>
-            <p>- Everybody</p>
+        {props.channelTitle}
+        <p>- Everybody</p>
         </div>
      </div>
      );

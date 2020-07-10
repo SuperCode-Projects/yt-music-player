@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import YouTube from 'react-youtube';
 import { ytkey } from "./key";
+import PlayerControls from "./Controls";
 
 
 class Video extends Component {
