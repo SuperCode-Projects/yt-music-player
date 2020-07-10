@@ -8,7 +8,7 @@ import './Navbar.css';
 
 const Navbar = () => (
     <nav>
-       <Link to="Search">
+       <Link to="/">
         <h2>Search</h2>  
         </Link>
         <Link to="Lyrics">
