@@ -13,7 +13,8 @@ class App extends Component {
     super()
     this.state = {
       /* currentVideo: "6M6samPEMpM" */
-      currentVideo: ""
+      currentVideo: "",
+      showBox: true
     }
     this.handleVideoClicked = this.handleVideoClicked.bind(this);
   }

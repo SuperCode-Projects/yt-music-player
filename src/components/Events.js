@@ -24,6 +24,7 @@ class Events extends Component {
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
+<<<<<<< HEAD
         this.setState({ events: result._embedded.events });
         console.log(this.state.events)
       });
@@ -38,6 +39,27 @@ class Events extends Component {
       </div>
     );
   }
+=======
+        this.setState({ events: result.discovery.v2.events.attractionId})
+    }) */
+}
+    render() {
+        return 
+      /*   if (!this.result) {
+            return (
+                <div>Sorry, no events found</div>
+            )}
+        return (
+            <button onClick={this.getEvents}>Get Events</button>
+            this.state.results.map(item =>
+                <img src = {item.discovery.v2.events.id.images} />
+                {item.discovery.v2.events.attractionId}
+                {item.discovery.v2.events.city}
+                {item.discovery.v2.events.venueId}
+                {item.discovery.v2.events.StartDateTime}
+        )) */
+    };
+>>>>>>> 64d9ec094691566a05c091b67ed353ea7179dd5d
 }
 
 export default Events;

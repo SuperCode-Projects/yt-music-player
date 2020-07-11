@@ -4,6 +4,7 @@
 /*__________________________mobile Version*/
 
     body{
+        width: 100%;
         font-family: 'Poppins', sans-serif;
         padding: 0;
         }
@@ -59,7 +60,7 @@
         background-color: #5602FF;
         height:100vh;
         display: grid;
-        box-sizing: content-box;
+        box-sizing: border-box;
         grid-template-rows: 1fr .5fr;
         grid-template-columns: .4fr .6fr;
         grid-template-areas: "CurrentSong Search"
