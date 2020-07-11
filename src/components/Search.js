@@ -37,7 +37,7 @@ import './VideoListItem.css';
       }
         render() {
           return (<div id="searchBox"> 
-            <input  onChange={this.HandleInputChanged} />
+            <input placeholder="search artist" onChange={this.HandleInputChanged} />
             <button onClick={this.HandleSearchClicked}>Search</button>
             <div>
             {

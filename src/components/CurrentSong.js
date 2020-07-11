@@ -12,8 +12,7 @@ const CurrentSong = (props) => {
         </div>
         <PlayerControls />
         <div className="NowPlaying">
-        {props.channelTitle}
-        <p>- Everybody</p>
+    <p>{props.video?.snippet?.title}</p>
         </div>
      </div>
      );
