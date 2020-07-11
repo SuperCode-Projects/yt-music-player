@@ -12,33 +12,31 @@ class Events extends Component {
     super(props);
     this.state = {
         q: "",
-        results: []
+        events: []
     } }
-    HandleInputChanged = (e) => {
-        this.setState({q: e.target.value})
-    }
-
-    async componentDidMount() {
-        const url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=${Ticketmasterkey}";
-        const response = await fetch(url);
-        const data = await response.json();
-        this.setState({result: data.results[0]});
-        console.log(data);
-    }
+getEvents() {
+    fetch(
+        'https://app.ticketmaster.com/discovery/v2/events.json?apikey={ticketmasterkey}'
+    )
+    .then((response) => response.json())
+    .then((reslut) =>{
+        console.log(result);
+        this.setState({ events: result.discovery.v2.events.attractionId})
+    })
+}
     render() {
         if (!this.result) {
             return (
                 <div>Sorry, no events found</div>
             )}
         return (
+            <button onClick={this.getEvents}>Get Events</button>
             this.state.results.map(item =>
-            <div>
                 <img src = {item.discovery.v2.events.id.images} />
                 {item.discovery.v2.events.attractionId}
                 {item.discovery.v2.events.city}
                 {item.discovery.v2.events.venueId}
                 {item.discovery.v2.events.StartDateTime}
-            </div>
         ))
     };
 }
