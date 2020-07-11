@@ -15,8 +15,10 @@ class Lyrics extends Component {
   }
 
   getLyrics() {
+      let [artist, track] = this.props.video?.snippet?.title.split("-")
+      console.log(artist,track)
     fetch(
-      `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_artist=Michael%20Jackson&q_track=Thriller&apikey=${musixmatchkey}`
+      `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_artist=${artist}&q_track=${track}&apikey=${musixmatchkey}`
     )
       .then((response) => response.json())
       .then((result) => {

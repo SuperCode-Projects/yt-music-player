@@ -15,17 +15,18 @@ class Events extends Component {
         events: []
     } }
 getEvents() {
-    fetch(
+   /*  fetch(
         'https://app.ticketmaster.com/discovery/v2/events.json?apikey={ticketmasterkey}'
     )
     .then((response) => response.json())
     .then((reslut) =>{
         console.log(result);
         this.setState({ events: result.discovery.v2.events.attractionId})
-    })
+    }) */
 }
     render() {
-        if (!this.result) {
+        return
+      /*   if (!this.result) {
             return (
                 <div>Sorry, no events found</div>
             )}
@@ -37,7 +38,7 @@ getEvents() {
                 {item.discovery.v2.events.city}
                 {item.discovery.v2.events.venueId}
                 {item.discovery.v2.events.StartDateTime}
-        ))
+        )) */
     };
 }
 
