@@ -15,7 +15,7 @@ class Video extends Component {
     }
 
     handleVideoClicked() {
-        this.props.activeVideo(this.props.item.id.videoId);
+        this.props.activeVideo(this.props.item);
     }
     
     render() {

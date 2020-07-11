@@ -31,9 +31,9 @@ import './VideoListItem.css';
           console.log(result)
         }
 
-        onClickVideoTile(videoId) {
-          console.log("test", videoId,this.props);
-          this.props.activeVideo(videoId);
+        onClickVideoTile(item) {
+          console.log("test", item,this.props);
+          this.props.activeVideo(item);
       }
         render() {
           return (<div id="searchBox"> 

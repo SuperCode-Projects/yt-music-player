@@ -8,7 +8,7 @@ const CurrentSong = (props) => {
     return (
      <div className="CurrentSong">
             <div>
-                <YouTube  autoplay videoId={props.videoId}/>
+                {props.video ? <YouTube  autoplay videoId={props.video.id.videoId}/> : ""} 
         </div>
         <PlayerControls />
         <div className="NowPlaying">

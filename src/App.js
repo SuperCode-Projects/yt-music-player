@@ -18,9 +18,9 @@ class App extends Component {
     this.handleVideoClicked = this.handleVideoClicked.bind(this);
   }
 
-  handleVideoClicked(videoId) {
-    this.setState({ currentVideo: videoId });
-    console.log("current video state", videoId);
+  handleVideoClicked(item) {
+    this.setState({ currentVideo: item });
+    console.log("current video state", item);
   }
 
   render() {
@@ -29,7 +29,7 @@ class App extends Component {
       <BrowserRouter>
     <div className="App">
       <div className="ControlBox">
-			<CurrentSong videoId={this.state.currentVideo} />
+			<CurrentSong video={this.state.currentVideo} />
       <div className="NextUp">
 	  		<NextUp />
 	  	</div>
@@ -41,7 +41,7 @@ class App extends Component {
               <Search activeVideo={this.handleVideoClicked} foo={"bar"}/>
 					</Route>
 					<Route path="/lyrics" exact>
-						<Lyrics />
+						<Lyrics video={this.state.currentVideo}/>
 					</Route>
           <Route path="/events" exact>
             <Events />
