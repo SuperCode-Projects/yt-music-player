@@ -44,7 +44,7 @@ class App extends Component {
 						<Lyrics video={this.state.currentVideo}/>
 					</Route>
           <Route path="/events" exact>
-            <Events />
+            <Events video={this.state.currentVideo}/>
           </Route>
 				</Switch>
     </div>
