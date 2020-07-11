@@ -26,7 +26,7 @@ import './VideoListItem.css';
         
         }
         async HandleSearchClicked(e){
-          let result = await searchYoutube(ytkey, { q: this.state.q });
+          let result = await searchYoutube(ytkey, { q: this.state.q,channelId:"UCPVhZsC2od1xjGhgEc2NEPQ"});
           this.setState({results: result.items})
           console.log(result)
         }
