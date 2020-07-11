@@ -16,9 +16,9 @@ class Lyrics extends Component {
     }};
 
     componentDidMount() {
-        fetch(`https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.items.id}&apikey=${musixmatchkey}`)
+        fetch(`https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.result.id}&apikey=${musixmatchkey}`)
         .then(res => {
-            let lyrics = res.data.message.body.lyrics;
+            let lyrics = result.data.message.body.lyrics;
             this.setState({lyrics: lyrics.item})
         } 
         )
