@@ -30,8 +30,8 @@ class Lyrics extends Component {
   render() {
     return (
       <>
-        <button onClick={this.getLyrics}>get Lyrics</button>
-        <Link to="/">Go Back</Link>
+        <button  id= "getLyricsBtn" onClick={this.getLyrics}>get Lyrics</button>
+        <Link id="goBackBtn" to="/">Go Back</Link>
         <div className="lyricsBody">
           <p>{this.state.lyrics}</p>
         </div>

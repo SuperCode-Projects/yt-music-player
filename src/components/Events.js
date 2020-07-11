@@ -25,7 +25,7 @@ getEvents() {
     }) */
 }
     render() {
-        return
+        return 
       /*   if (!this.result) {
             return (
                 <div>Sorry, no events found</div>
