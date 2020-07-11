@@ -9,7 +9,7 @@ const CurrentSong = (props) => {
     return (
      <div className="CurrentSong">
             <div>
-                {props.video ? <YouTube  autoplay videoId={props.video.id.videoId}/> : ""} 
+    {props.video ? <YouTube  autoplay videoId={props.video.id.videoId}/> : <img id="defaultImage" src="./images/adi-goldstein-mDinBvq1Sfg-unsplash.jpg"/>} 
         </div>
         <PlayerControls />
         <div className="NowPlaying">

@@ -12,6 +12,7 @@ nav a{
 
 }
 
-a:focus{
-    border-bottom: 2px solid white;
+nav a:focus{
+    color: tomato;
+
 }
