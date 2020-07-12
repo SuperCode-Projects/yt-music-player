@@ -18,11 +18,15 @@
     border: none;
 }
 
-.lyricsBody p{
+.lyricsBody{
     background-color: white;
     border-radius: 35px;
-    padding: 100px;
-    margin: 15px;
+    margin: 25px;
     text-align: center;
     color: black;
+}
+
+
+.lyricsBody p{
+    padding: 35px;
 }

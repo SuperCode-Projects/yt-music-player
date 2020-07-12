@@ -1,10 +1,15 @@
-.events {
-    width: 80%;
-    height: 80%;
-    display: inline-block;
+#Events{
+    border-radius: 35px;
+    margin: 60px 15px 0 15px;
+    background-color: white;
 }
 
-.events > img {
-    width: 10%;
-    height: 10%;
+#EventsBtn{
+    display: flexbox;
+    float: right;
+    margin-right: 15px;
+}
+
+#Events a {
+   padding: 35px;
 }

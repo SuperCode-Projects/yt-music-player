@@ -30,12 +30,14 @@ class Events extends Component {
   }
   render() {
     return (
-      <div>
-        <button onClick={this.getEvents}>Get Events</button>
+      <>
+        <button id="EventsBtn" onClick={this.getEvents}>Get Events</button>
+        <div id="Events">
         {
-            this.state.events?.map(event => <EventList event={event}/>) 
+            this.state.events?.map(event =><EventList event={event}/>) 
         }
-      </div>
+        </div>
+      </>
     );
   }
 }
