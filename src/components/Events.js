@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import EventList from "./EventList"
+import EventList from "./EventList";
+import { Link } from "react-router-dom";
 
 import "./Events.css";
 
@@ -32,6 +33,7 @@ class Events extends Component {
     return (
       <>
         <button id="EventsBtn" onClick={this.getEvents}>Get Events</button>
+        <Link id="goBackBtn" to="/">Go Back</Link>
         <div id="Events">
         {
             this.state.events?.map(event =><EventList event={event}/>) 

@@ -13,3 +13,17 @@
 #Events a {
    padding: 35px;
 }
+
+#goBackBtn{
+    display: inline-flex;
+    margin-left: 15px;
+    padding: 15px; 
+    color: #afff14;
+    background-color: tomato;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 900;
+    border: none;
+}
