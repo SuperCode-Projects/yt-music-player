@@ -45,9 +45,6 @@ iframe {
     justify-content: center;
     background-color: #0000CA;
     border-radius: 30px;
+    color: white
 }
 
-#artist{
-    text-transform: uppercase;
-   font-weight: 900;
-}
