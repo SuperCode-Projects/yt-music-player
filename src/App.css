@@ -25,6 +25,7 @@
         text-align: left;
         overflow: hidden;
         padding: 15px;
+        width: auto;
     } 
 
     .ControlBox{

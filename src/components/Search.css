@@ -13,7 +13,6 @@
 
 input{
     grid-area: input;
-    width: auto;
     height: 50px;
     border-radius: 15px;
     font-size: 25px;
@@ -25,7 +24,6 @@ input{
 
 button{
     grid-area: btn;
-    width: auto;
     height: 50px;
     color: #afff14;
     background-color: tomato;
@@ -43,4 +41,8 @@ button{
     border-radius: 35px;
     width: 112%;
     height: 150%;
+}
+
+#searchBtn{
+    width: 60%;
 }
