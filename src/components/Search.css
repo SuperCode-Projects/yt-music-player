@@ -3,7 +3,7 @@
     align-content: start;
     width: 100%;
     display: grid;
-    grid-template-columns: .8fr .2fr;
+    grid-template-columns: 1fr 100px;
     grid-template-rows: .5fr;
     grid-template-areas: "input btn";
     gap: .5em;
