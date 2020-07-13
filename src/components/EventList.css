@@ -6,11 +6,11 @@
 .SearchlistEvents a{
     color: black;
     font-size: smaller;
-    padding: 0;
+    padding: 2%;
     margin: 0;
 }
 
 #concert{
-    width: 10%;
+    width: 2%;
     height: auto;
 }

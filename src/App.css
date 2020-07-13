@@ -22,13 +22,15 @@
     }
     .navigation{
         grid-area: Search;
-        text-align: left;    } 
+        text-align: left;
+        overflow: hidden;
+    } 
 
     .ControlBox{
         grid-area: CurrentSong;
         border-radius: 0 0 35px 35px;
         background-color: #5602FF;
-        height: 90vh;
+        height: 100vh;
     }
 
     nav{
