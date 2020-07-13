@@ -1,7 +1,6 @@
 .SearchlistEvents{
-    display: flex;
-    float: right;
-    text-align: left;
+    background-color: white;
+    border-radius: 35px;
 
 }
 .SearchlistEvents a{
@@ -13,5 +12,4 @@
 #concert{
     width: 50px;
     height: auto;
-    float: left;
 }
