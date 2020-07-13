@@ -13,6 +13,7 @@
 
 input{
     grid-area: input;
+    width: 100%;
     height: 50px;
     border-radius: 15px;
     font-size: 25px;
@@ -24,6 +25,7 @@ input{
 
 button{
     grid-area: btn;
+    display: flexbox;
     height: 50px;
     color: #afff14;
     background-color: tomato;
