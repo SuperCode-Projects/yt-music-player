@@ -2,7 +2,7 @@
 #searchBox{
     align-content: start;
     width: 100%;
-    margin: 20px;
+    margin: 5px;
     display: grid;
     grid-template-columns: .8fr .2fr;
     grid-template-rows: .5fr;
