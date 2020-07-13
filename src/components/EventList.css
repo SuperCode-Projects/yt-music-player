@@ -1,11 +1,9 @@
 .SearchlistEvents{
     display: flex;
-    justify-content: space-evenly;
 
 }
 .SearchlistEvents a{
     color: black;
-    font-size: smaller;
     padding: 2%;
     margin: 0;
 }
