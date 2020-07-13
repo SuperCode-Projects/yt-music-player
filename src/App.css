@@ -4,7 +4,7 @@
 /*__________________________mobile Version*/
 
     body{
-        width: 100%;
+        width: 100vw;
         font-family: 'Poppins', sans-serif;
         padding: 0;
         cursor: url(/icons8-kreis-50.png),auto;
@@ -13,7 +13,7 @@
     .App{
         display: grid;
         box-sizing: border-box;
-        gap: 1em;
+        gap: .1em;
         grid-template-rows: .5fr .5fr;
         grid-template-columns: 1fr;
         grid-template-areas: "CurrentSong"
@@ -22,15 +22,13 @@
     }
     .navigation{
         grid-area: Search;
-        text-align: left;
-
-        padding: 20px 0;
-    } 
+        text-align: left;    } 
 
     .ControlBox{
         grid-area: CurrentSong;
         border-radius: 0 0 35px 35px;
         background-color: #5602FF;
+        height: 90vh;
     }
 
     nav{
@@ -77,5 +75,6 @@
 
     .ControlBox{
         grid-area: CurrentSong;
+        margin: 0 .5em;
     }
 }

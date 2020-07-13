@@ -9,13 +9,13 @@ import './Navbar.css';
 const Navbar = () => (
     <nav>
        <Link to="/">
-        <h2>Search</h2>  
+        <h3>Search</h3>  
         </Link>
         <Link to="Lyrics">
-        <h2>Lyrics</h2>
+        <h3>Lyrics</h3>
         </Link>
         <Link to="Events">
-        <h2>Events</h2>
+        <h3>Events</h3>
         </Link>
     </nav>
 )

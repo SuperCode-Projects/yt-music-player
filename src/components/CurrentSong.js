@@ -11,7 +11,7 @@ const CurrentSong = (props) => {
             <div>
     {props.video ? <YouTube  autoplay videoId={props.video.id.videoId}/> : <img id="defaultImage" src="./images/blaz-photo-cZWZjymwI9o-unsplash.jpg"/>} 
         </div>
-        <PlayerControls />
+        <PlayerControls/>
         <div className="NowPlaying">
     <p>{props.video?.snippet?.title}</p>
         </div>

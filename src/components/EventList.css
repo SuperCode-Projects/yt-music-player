@@ -1,9 +1,16 @@
+.SearchlistEvents{
+    display: flex;
+    justify-content: space-evenly;
 
+}
 .SearchlistEvents a{
     color: black;
+    font-size: smaller;
+    padding: 0;
+    margin: 0;
 }
 
 #concert{
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    height: auto;
 }

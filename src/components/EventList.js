@@ -18,11 +18,9 @@ class EventList extends Component {
     return (
       <div className="SearchlistEvents">
         <a href={this.props.event.url} target="_blank">
+        <><img id="concert" src="concert.jpg"/></>
           {this.props.event.name}
         </a>
-        <div>
-          <img id="concert" src="concert.jpg"/>
-          </div>
         {/* <a href="#" onClick={this.handleEventClicked}>
                 <img src={this.props.item.events.images[0]} alt="image"/> 
                 <>{this.props.item.discovery.v2.events.name}

@@ -4,11 +4,12 @@ nav{
     background-color: black;
     border-radius: 35px;
     height: 75px;
-    margin: .3em;
+    margin: 1.7em .3em .3em .3em;
 }
 
 nav a{
     color: white;
+    align-self: center;
 
 }
 
