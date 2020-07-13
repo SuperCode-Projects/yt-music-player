@@ -26,6 +26,7 @@
         overflow: hidden;
         padding: 15px;
         width: auto;
+        height: 100vh;
     } 
 
     .ControlBox{
@@ -75,6 +76,7 @@
     .navigation{
         border-left: 5px solid white;
         border-radius: 35px 0 0 35px;
+        height: 100%;
     } 
 
     .ControlBox{

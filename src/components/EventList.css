@@ -1,5 +1,7 @@
 .SearchlistEvents{
     display: flex;
+    float: right;
+    text-align: left;
 
 }
 .SearchlistEvents a{
@@ -9,6 +11,7 @@
 }
 
 #concert{
-    width: 2%;
+    width: 50px;
     height: auto;
+    float: left;
 }
