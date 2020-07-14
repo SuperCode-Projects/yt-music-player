@@ -21,7 +21,6 @@ input{
     cursor: url(/icons8-ausgefüllter-kreis-50.png),auto;
 }
 
-
 button{
     grid-area: btn;
     height: 50px;
@@ -33,6 +32,15 @@ button{
     font-weight: 900;
     border: none;
     outline: #afff14;
+    box-shadow: 1px 1px 1px tomato,
+                -1px -1px 1px tomato;
+}
+
+button:hover{
+    color: tomato;
+    background-color: #0000CA;
+    box-shadow: 1px 1px 5px tomato,
+                -1px -1px 5px tomato;
 }
 
 #searchResults{

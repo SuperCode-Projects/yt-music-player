@@ -18,12 +18,12 @@ class App extends Component {
     }
     this.handleVideoClicked = this.handleVideoClicked.bind(this);
   }
-
+  
   handleVideoClicked(item) {
     this.setState({ currentVideo: item });
     console.log("current video state", item);
   }
-
+  
   render() {
 
     return (
@@ -51,6 +51,7 @@ class App extends Component {
     </div>
     </div>
     </BrowserRouter>
+
   );
 }
 }

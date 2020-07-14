@@ -22,4 +22,14 @@
     font-size: smaller;
     font-weight: 900;
     border: none;
+    box-shadow: 1px 1px 1px tomato,
+                -1px -1px 1px tomato;
 }
+
+#goBackBtn:hover{
+    color: tomato;
+    background-color: #0000CA;
+    box-shadow: 1px 1px 5px tomato,
+                -1px -1px 5px tomato;
+}
+
