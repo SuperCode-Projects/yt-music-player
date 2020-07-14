@@ -23,8 +23,8 @@ class EventList extends Component {
           </>
           {this.props.event.name}
         </a>
-        Date: {this.props.event.dates.start.localDate}
-         City: {this.props.event.dates.timezone}
+        <p>Date: {this.props.event.dates.start.localDate}</p>
+         <p>City: {this.props.event.dates.timezone}</p>
         {/* <a href="#" onClick={this.handleEventClicked}>
                 <img src={this.props.item.events.images[0]} alt="image"/> 
                 <>{this.props.item.discovery.v2.events.name}
