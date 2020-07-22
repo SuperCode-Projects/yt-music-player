@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/*__________________________mobile Version*/
+
+    body{
+        width: 100vw;
+        height:100vh;
+        font-family: 'Lato', sans-serif;
+        padding: 0;
+        cursor: url(/icons8-kreis-50.png),auto;
+        }
+
+    .App{
+        display: grid;
+        box-sizing: border-box;
+        gap: .1em;
+        grid-template-rows: .5fr .5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "CurrentSong"
+                            "Search";
+
+    }
+    .navigation{
+        grid-area: Search;
+        text-align: left;
+        overflow: hidden;
+        padding: 15px;
+        width: auto;
+        height: 100vh;
+    } 
+
+    .ControlBox{
+        grid-area: CurrentSong;
+        border-radius: 0 0 35px 35px;
+        background-color: #5602FF;
+        height: 100vh;
+    }
+
+    nav{
+        display: inline-flex;
+    }
+    
+    h2{
+        padding: 0 1em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: url(/icons8-dünn-umkreist-48.png),auto;
+    }
+    
+    a img{
+        padding: 0 1em;
+        margin-top: 2em;
+    } 
+
+
+/* ________________DESKTOP ANSICHT */
+
+
+@media (min-device-width: 800px) { 
+
+    .App{
+        background-color: #5602FF;
+        height:100vh;
+        display: grid;
+        box-sizing: border-box;
+        grid-template-rows: 1fr .5fr;
+        grid-template-columns: .4fr .6fr;
+        grid-template-areas: "CurrentSong Search"
+                            "CurrentSong Search";
+
+    }
+
+    .navigation{
+        border-left: 5px solid white;
+        border-radius: 35px 0 0 35px;
+        height: 100%;
+    } 
+
+    .ControlBox{
+        grid-area: CurrentSong;
+        margin: 0 .5em;
+    }
+}
+

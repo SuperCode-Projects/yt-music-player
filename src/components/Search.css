@@ -1,0 +1,55 @@
+
+#searchBox{
+    align-content: start;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: .5fr;
+    grid-template-areas: "input btn";
+    gap: .5em;
+    height:auto;
+    border-radius: 35px;
+}
+
+input{
+    grid-area: input;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: 1px solid black;
+    outline: none;
+    cursor: url(/icons8-ausgefüllter-kreis-50.png),auto;
+}
+
+button{
+    grid-area: btn;
+    height: 50px;
+    color: #afff14;
+    background-color: tomato;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: none;
+    outline: #afff14;
+    box-shadow: 1px 1px 1px tomato,
+                -1px -1px 1px tomato;
+}
+
+button:hover{
+    color: tomato;
+    background-color: #0000CA;
+    box-shadow: 1px 1px 5px tomato,
+                -1px -1px 5px tomato;
+}
+
+#searchResults{
+    background-color: white;
+    border-radius: 35px;
+    width: 112%;
+    height: 150%;
+}
+
+#searchBtn{
+    width: 60%;
+}

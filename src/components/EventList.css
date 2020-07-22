@@ -1,0 +1,20 @@
+.SearchlistEvents{
+    padding-top: 20px;
+}
+
+.SearchlistEvents a{
+    color: black;
+    margin: 20px;
+    font-size: smaller;
+}
+
+#concert{
+    width: 50px;
+    height: auto;
+    float: right;
+}
+
+p{
+    margin-left: 20px;
+    font-size: smaller;
+}
